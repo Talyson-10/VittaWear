@@ -1,0 +1,132 @@
+/* ============================================
+   AUTH (Login & Cadastro)
+   ============================================ */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2xl) 0;
+}
+
+.auth-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    width: 100%;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+/* Card */
+.auth-card {
+    padding: var(--spacing-2xl);
+}
+
+.auth-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.auth-header p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Form */
+.auth-form .form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-row {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.auth-form input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    color: #dc3545;
+}
+
+/* Botão */
+.btn-full {
+    width: 100%;
+}
+
+/* Divider */
+.auth-divider {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+    color: var(--color-text-muted);
+}
+
+/* Social */
+.social-login {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+.btn-social:hover {
+    background: var(--color-border-light);
+}
+
+/* Footer */
+.auth-footer {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+/* Imagem lateral */
+.auth-image {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.auth-image h2 {
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-image {
+        display: none;
+    }
+}
